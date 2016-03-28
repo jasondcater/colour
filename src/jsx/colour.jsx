@@ -122,9 +122,12 @@
 
             return (
 
-                <div id="colour-container" style={{ "backgroundColor": this.state["backgroundColor"] }}>
-
+                <div id="colour-container">
+                        
                     <input id="colour-input" placeholder="Enter a color or code" onChange={ this.validateInputValue } style={{ "borderColor": this.state["borderColor"] }} />
+                    <br />
+                    <div id="colour-palette" style={{ "backgroundColor": this.state["backgroundColor"], "borderColor": this.state["borderColor"] }}>
+                    </div>
                 </div>
             )
         }

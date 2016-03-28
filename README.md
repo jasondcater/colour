@@ -33,3 +33,19 @@ Build
 ```
 browserify -t [ babelify --presets [ react ] ] ./src/js/colour.js -o bundle.js
 ```
+
+About
+-----
+
+* The small diddy is built using React and packaged using Browserify.
+* All commom HTML Color names are valid.
+* Once a vaild color name or hexidecimal value is detected the application will update the palette.
+* A timeout is inlcluded for hexidecimal values of three digits. Assuming a three digit value IS NOT intended we delay the processing of the color code to see if there will be a fourth digit.
+* The inverse and lumocity shifted color, of the selected color, is used as the border for the palette and input.
+
+"Potential Extensions"
+----------------------
+* Include a color picker. 
+* Include a color name list.
+* If a color code corresponds to a color name, resovle the color name for the user.
+* Provide secondary, tertiary and complementary color palette for selected color.

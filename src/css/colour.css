@@ -6,26 +6,44 @@ body{
     text-shadow:1px 1px 1px rgba(0,0,0,0.004);
 }
 
-#main-container,
-#colour-container{
+input:focus{
+
+    outline:none;
+}
+
+#main-container{
 
     position:absolute;
     width:100%;
     height:100%;
     margin:0 auto;
-    background-color:#f0f0f0;
+    background-color:#333333;
+    text-align:center;
+}
+
+#colour-container{
+
+    display:inline-block;
+    min-width:252px;
+    margin-top:10px;
 }
 
 #colour-input{
 
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:250px;
+    position:relative;
+    max-width:250px;
+    min-width:250px;
     height:35px;
-    margin-top:-35px;
-    margin-left:-125px;
     text-align:center;
-    outline:0px;
+    border:5px solid #666666;
+    margin-bottom:-5px;
+    font-size:1.2em;
+}
+
+#colour-palette{
+
+    position:relative;
+    width:252px;
+    height:250px;
     border:5px solid #666666;
 }

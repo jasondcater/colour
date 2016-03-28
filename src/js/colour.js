@@ -122,9 +122,12 @@
 
             return (
 
-                React.createElement("div", {id: "colour-container", style: { "backgroundColor": this.state["backgroundColor"]}}, 
-
-                    React.createElement("input", {id: "colour-input", placeholder: "Enter a color or code", onChange:  this.validateInputValue, style: { "borderColor": this.state["borderColor"]}})
+                React.createElement("div", {id: "colour-container"}, 
+                        
+                    React.createElement("input", {id: "colour-input", placeholder: "Enter a color or code", onChange:  this.validateInputValue, style: { "borderColor": this.state["borderColor"]}}), 
+                    React.createElement("br", null), 
+                    React.createElement("div", {id: "colour-palette", style: { "backgroundColor": this.state["backgroundColor"], "borderColor": this.state["borderColor"]}}
+                    )
                 )
             )
         }
