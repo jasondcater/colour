@@ -37,7 +37,7 @@ browserify -t [ babelify --presets [ react ] ] ./src/js/colour.js -o bundle.js
 About
 -----
 
-* The small diddy is built using React and packaged using Browserify.
+* This small diddy is built using React and packaged using Browserify.
 * All commom HTML Color names are valid.
 * Once a vaild color name or hexidecimal value is detected the application will update the palette.
 * A timeout is inlcluded for hexidecimal values of three digits. Assuming a three digit value IS NOT intended we delay the processing of the color code to see if there will be a fourth digit.
